@@ -8,9 +8,6 @@
           crossorigin="anonymous">
     <title>Strona internetowa</title>
     <style>
-        body{
-            padding: 10px 150px;
-        }
         .radio-container {
             display: flex;
             gap: 150px;
@@ -20,90 +17,97 @@
             gap: 5px;
             padding: 10px 0px;
         }
+
     </style>
 </head>
 <body>
-<h1>Rejestracja</h1>
-<div>
-    <div class="mb-3">
-        <label for="input1" class="form-label">Imię</label>
-        <input class="form-control" id="input1" placeholder="Wpisz imię">
-    </div>
-    <div class="mb-3">
-        <label for="input2" class="form-label">Nazwisko</label>
-        <input class="form-control" id="input2" placeholder="Wpisz nazwisko">
-    </div>
-</div>
-<div class="radio-container">
-    <p>Płeć</p>
-    <div>
+<div class="container">
+    <form>
+        <h1>Rejestracja</h1>
+        <div>
+            <div class="mb-3">
+                <label for="input1" class="form-label">Imię</label>
+                <input class="form-control" id="input1" placeholder="Wpisz imię">
+            </div>
+            <div class="mb-3">
+                <label for="input2" class="form-label">Nazwisko</label>
+                <input class="form-control" id="input2" placeholder="Wpisz nazwisko">
+            </div>
+        </div>
+        <div class="radio-container">
+            <p>Płeć</p>
+            <div>
+                <div class="form-check">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"
+                               checked>
+                        Kobieta
+                    </label>
+                </div>
+                <div class="form-check">
+                    <label class="form-check-label" for="flexRadioDefault2">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                        Mężczyzna
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="mb-3">
+            <label for="input3" class="form-label">Adres email</label>
+            <input class="form-control" id="input3" placeholder="Wpisz adres email">
+        </div>
+        <label for="inputPassword5" class="form-label">Hasło</label>
+        <input type="password" id="inputPassword5" class="form-control" aria-labelledby="passwordHelpBlock"
+               placeholder="Hasło">
+        <div id="passwordHelpBlock" class="form-text">
+            Min. 8 znaków
+        </div>
+        <div class="address-container">
+            <div class="mb-3" style="width: 45%;">
+                <label for="input4" class="form-label">Miasto</label>
+                <input class="form-control" id="input4">
+            </div>
+            <div style="width: 30%;">
+                <label for="form-select" class="form-label">Województwo</label>
+                <select class="form-select" id="form-select" aria-label="Default select example">
+                    <option selected>Wybierz</option>
+                    <option value="1">dolnośląskie</option>
+                    <option value="2">kujawsko-pomorskie</option>
+                    <option value="3">lubelskie</option>
+                    <option value="4">lubuskie</option>
+                    <option value="5">łódzkie</option>
+                    <option value="6">małopolskie</option>
+                    <option value="7">mazowieckie</option>
+                    <option value="8">opolskie</option>
+                    <option value="9">podkarpackie</option>
+                    <option value="10">podlaskie</option>
+                    <option value="11">pomorskie</option>
+                    <option value="12">śląskie</option>
+                    <option value="13">świętokrzyskie</option>
+                    <option value="14">warmińsko-mazurskie</option>
+                    <option value="15">wielkopolskie</option>
+                    <option value="16">zachodniopomorskie</option>
+                </select>
+            </div>
+            <div class="mb-3" style="width: 25%;">
+                <label for="input6" class="form-label">Kod pocztowy</label>
+                <input class="form-control" id="input6">
+            </div>
+        </div>
         <div class="form-check">
-            <label class="form-check-label" for="flexRadioDefault1">
-                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked>
-                Kobieta
+            <input class="form-check-input" type="checkbox" value="" id="flexRegulamin">
+            <label class="form-check-label" for="flexRegulamin">
+                Akceptuje <a href="">regulamin</a>
             </label>
         </div>
         <div class="form-check">
-            <label class="form-check-label" for="flexRadioDefault2">
-                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
-                Mężczyzna
+            <input class="form-check-input" type="checkbox" value="" id="flexMarketing" checked>
+            <label class="form-check-label" for="flexMarketing">
+                Wyrażam zgodę na otrzymywanie informacji marketingowych
             </label>
         </div>
-    </div>
+        <button type="button" class="btn btn-primary btn-sm">Rejestruj</button>
+    </form>
 </div>
-<div class="mb-3">
-    <label for="input3" class="form-label">Adres email</label>
-    <input class="form-control" id="input3" placeholder="Wpisz adres email">
-</div>
-<label for="inputPassword5" class="form-label">Hasło</label>
-<input type="password" id="inputPassword5" class="form-control" aria-labelledby="passwordHelpBlock" placeholder="Hasło">
-<div id="passwordHelpBlock" class="form-text">
-    Min. 8 znaków
-</div>
-<div class="address-container">
-    <div class="mb-3" style="width: 45%;">
-        <label for="input4" class="form-label">Miasto</label>
-        <input class="form-control" id="input4">
-    </div>
-    <div style="width: 30%;">
-        <label for="form-select" class="form-label">Województwo</label>
-        <select class="form-select" id="form-select" aria-label="Default select example">
-            <option selected>Wybierz</option>
-            <option value="1">dolnośląskie</option>
-            <option value="2">kujawsko-pomorskie</option>
-            <option value="3">lubelskie</option>
-            <option value="4">lubuskie</option>
-            <option value="5">łódzkie</option>
-            <option value="6">małopolskie</option>
-            <option value="7">mazowieckie</option>
-            <option value="8">opolskie</option>
-            <option value="9">podkarpackie</option>
-            <option value="10">podlaskie</option>
-            <option value="11">pomorskie</option>
-            <option value="12">śląskie</option>
-            <option value="13">świętokrzyskie</option>
-            <option value="14">warmińsko-mazurskie</option>
-            <option value="15">wielkopolskie</option>
-            <option value="16">zachodniopomorskie</option>
-        </select>
-    </div>
-    <div class="mb-3" style="width: 25%;">
-        <label for="input6" class="form-label">Kod pocztowy</label>
-        <input class="form-control" id="input6">
-    </div>
-</div>
-<div class="form-check">
-    <input class="form-check-input" type="checkbox" value="" id="flexRegulamin">
-    <label class="form-check-label" for="flexRegulamin">
-        Akceptuje <a href="">regulamin</a>
-    </label>
-</div>
-<div class="form-check">
-    <input class="form-check-input" type="checkbox" value="" id="flexMarketing" checked>
-    <label class="form-check-label" for="flexMarketing">
-        Wyrażam zgodę na otrzymywanie informacji marketingowych
-    </label>
-</div>
-<button type="button" class="btn btn-primary btn-sm">Rejestruj</button>
 </body>
 </html>
